@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Relative units</title>
+   <style>
+    .box{
+        height : 100px;
+        width : 200px;
+        background-color : violet;
+        margin: 5px;
+        text-align: center;
+        font-size: 35px;
+    }
+   
+    #percentageunit{
+        height: 50%;
+        width: 75%;
+    }
+    #parent{
+        height: 300px;
+        width: 350px;
+        background-color: red;
+    }
+    #remunit{
+        height: 10rem;
+        width: 20rem;
+        font-size: 10px;
+    }
+    #emunit{
+        height: 10em;
+        width: 25em;
+    }
+    #pixelunit{
+
+    }
+    #vhvwunit{
+        height: 50vh;
+        width: 75vw;
+    }
+   
+   </style>
+    
+</head>
+
+<body>
+    This is responsive style
+    <div class="box" id="percentageunit">percentage unit (50,70)</div>
+    <div id="parent">
+        <div class="box" id="remunit">rem unit (10,20)</div>
+    </div>
+    <div class="box" id="emunit">em unit (10,25)</div>
+    <div class="box" id="pixelunit">pixels unit(100,200)</div>
+    <div class="box" id="vhvwunit">vh/vw unit(50,75)</div>
+</body>
+</html>
