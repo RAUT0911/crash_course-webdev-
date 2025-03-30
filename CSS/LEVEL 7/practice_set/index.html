@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Practice Set</title>
+   <style>
+    .progress-container{
+        height: 20px;
+        width: 90%;
+        background-color: rgb(163, 157, 148);
+        border: 2px solid black;
+        border-radius: 20px;
+
+
+    }
+    #progress-bar1 {
+        /* width: 100%; */
+        height: 100%;
+        background-color: pink ;
+        border-radius: 20px;
+
+        animation: animate_pb1 3s infinite;
+    }
+
+    #progress-bar2 {
+        /* width: 100%; */
+        height: 100%;
+        background-color: pink ;
+        border-radius: 20px;
+
+        animation: animate_pb2 3s infinite;
+    }
+
+
+    @keyframes animate_pb1 {
+        from {width: 0%;}
+        to {width: 100%;}
+    }
+
+    @keyframes animate_pb2 {
+        0%{width: 0%;}
+        50%{width: 50%;}
+        90%{width: 95%;}
+        95%{width: 70%;}
+        100%{width: 100%;}
+    }
+   </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div id="progress-bar1"></div>
+    </div>
+    <br>
+    <div class="progress-container">
+        <div id="progress-bar2"></div>
+    </div>
+</body>
+</html>

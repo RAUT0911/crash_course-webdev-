@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flexbox container - align-content property</title>
+    <style>
+        #container1{
+            height: 400px;
+            width: 500px;
+            background-color: lime;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+        }
+        #container2{
+            height: 400px;
+            width: 500px;
+            background-color: lime;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            align-content: center;
+        }
+        .box{
+            height: 50px;
+            width: 70px;
+            margin: 5px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: red;
+        }
+        /* align-self : center */
+        #box2{background-color: blueviolet;align-self: center;}
+        #box2{background-color: aqua;}
+        #box3{background-color: brown;}
+        #box4{background-color: yellow;  align-self: end;}
+        #box5{background-color: gray;}
+        #box6{background-color: rgb(245, 179, 238);}
+        #box7{background-color: rebeccapurple;}
+    </style>
+</head>
+<body>
+    <b>flexbox container - align-content property</b>
+    <br>
+    <b>A. without align-content [cross-axis spacing ]  => [display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;]</b>
+    <div id="container1">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+        <div id="box6" class="box"></div>
+        <div id="box7" class="box"></div>
+       </div>
+    <br>
+    <b>B. with align-content [cross-axis items in between spacing]    => [display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;] </b>
+    <div id="container2">
+        <div id="box1" class="box"></div>
+        <div id="box2" class="box"></div>
+        <div id="box3" class="box"></div>
+        <div id="box4" class="box"></div>
+        <div id="box5" class="box"></div>
+        <div id="box6" class="box"></div>
+        <div id="box7" class="box"></div>
+       </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> css Transform </title>
+    <style>
+        .box{
+            height: 50px;
+            width: 70px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: plum;
+            position: relative;
+            top: 50px;
+            left: 50px;
+            transition : all 1s ease-in-out 0s;
+        }
+        
+        #box1{
+            background-color: lime;
+        }
+        #box1:hover{
+            transform: rotate(45deg);
+        }
+        #box2{
+            background-color: blueviolet;
+        }
+        #box2:hover{
+            transform: scale(2);
+            
+        }
+        #box3{background-color: indianred;}
+        #box3:hover{
+            transform: translatex(100px);
+            
+        }
+        #box4{background-color: violet;}
+        #box4:hover{
+            transform: skewy(180deg);
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"> Rotate 45 </div>
+    <br>
+    <div class="box" id="box2"> Scale 2</div>
+    <br>
+    <div class="box" id="box3"> Translate x</div>
+    <br>
+    <div class="box" id="box4"> skew y</div>
+</body>
+</html>
